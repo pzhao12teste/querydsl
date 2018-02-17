@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.querydsl</groupId>
   <artifactId>querydsl-root</artifactId>
-  <version>4.1.5.BUILD-SNAPSHOT</version>
+  <version>4.1.4.BUILD-SNAPSHOT</version>
   <name>Querydsl</name>
   <description>parent project for Querydsl modules</description>
   <url>${project.homepage}</url>
@@ -67,7 +67,7 @@
     <animal-sniffer.version>1.14</animal-sniffer.version>
 
     <jdo.version>3.0.1</jdo.version>
-    <morphia.version>1.3.2</morphia.version>
+    <morphia.version>0.105</morphia.version>
     
     <!-- Import-Package definitions for maven-bundle-plugin -->
     <osgi.import.package.root>
@@ -140,11 +140,6 @@
         <artifactId>slf4j-log4j12</artifactId>
         <version>${slf4j.version}</version>
         <scope>provided</scope>
-      </dependency>
-      <dependency>
-        <groupId>javax.inject</groupId>
-        <artifactId>javax.inject</artifactId>
-        <version>1</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
@@ -291,7 +286,6 @@
                   <excludes>
                     <exclude>com/querydsl/core/types/dsl/PathBuilderValidator</exclude>
                     <exclude>com/querydsl/sql/Union</exclude>
-                    <exclude>com/querydsl/sql/SQLListenerContextImpl</exclude>
                   </excludes>
                   <compatibilityType>BACKWARD_COMPATIBLE_USER</compatibilityType>
                   <dumpDetails>true</dumpDetails>
@@ -519,7 +513,7 @@
             <extension>
                 <groupId>edu.illinois</groupId>
                 <artifactId>incremental-builder-with-ekstazi</artifactId>
-                <version>3.5.3</version>
+                <version>3.5.4</version>
             </extension>
         </extensions>
     </build>
